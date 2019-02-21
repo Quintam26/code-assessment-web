@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
+import styles from './Cart.css';
 
 const Cart  = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0
@@ -19,14 +20,20 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
   )
 
   return (
-    <div>
-      <h3>Your Cart</h3>
+    <div className={styles.cart}>
+    <div className="cart">
+    <main className="cart-case">
+    <div className="cart-content">
+      {/* <h3>Your Cart</h3> */}
       <div>{nodes}</div>
-      <p>Total: &#36;{total}</p>
+      {/* <p>Total: &#36;{total}</p>
       <button onClick={onCheckoutClicked}
         disabled={hasProducts ? '' : 'disabled'}>
         Checkout
-      </button>
+      </button> */}
+    </div>
+    </main>
+    </div>
     </div>
   )
 }

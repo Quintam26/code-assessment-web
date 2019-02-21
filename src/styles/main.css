@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Chivo');
+
+body {
+  font-family: 'Chivo', sans-serif;
+  padding: 1rem 6rem;
+  background-color: rgb(250, 250, 250);
+}
+
+hr {
+  border-top: 1px solid rgb(224, 224, 224);}
