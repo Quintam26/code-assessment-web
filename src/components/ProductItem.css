@@ -3,12 +3,30 @@
     top: -100px; left: 730px;
     border: none;
     color: white;
-    background-color: steelblue;
+    background-color: #5e97d1;
     border-radius: 1.5rem;
-    padding: .75rem 1.75rem;
+    padding: .75rem 1.5rem;
+}
+
+@media(max-width: 1280px){
+  .product-btn {
+      position: relative;
+      top: -80px;
+      left: 500px;
+  }  
+}
+
+@media(max-width: 786px){
+  .product-btn {
+      position: relative;
+      top: -55px;
+      left: 275px;
+      font-size: 10px;
+  }  
 }
 
 .product-btn:hover {
-    background-color: rgb(47, 98, 139);
+    background-color: #407fc0;
     cursor: pointer;
 }
+

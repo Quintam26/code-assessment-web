@@ -13,21 +13,95 @@ img {
   border-bottom-left-radius: .5rem;
 }
 
+@media(max-width: 1280px){
+  img {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media(max-width: 768px){
+  img {
+    width: 250px;
+    height: 200px;
+  }
+}
+
 .product-img {
   float: left;
 }
 
 .product-content {
-  vertical-align: center;
   float: right;
   width: 850px;
   padding: 5rem;
+  font-size: 1.75rem;
+}
+
+@media(max-width: 1280px){
+  .product-content {
+    float: right;
+    width: 500px;
+    padding: 3.5rem;
+  }
+}
+
+@media(max-width: 768px){
+  .product-content {
+    float: right;
+    width: 190px;
+    height: 50px;
+  }
 }
 
 .product-price {
   float: right;
 }
 
+@media(max-width: 1280px){
+  .product-price {
+    font-size: 1.25rem;
+  }
+}
+
+@media(max-width: 768px){
+  .product-price {
+    float: right;
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+  }
+}
+
+@media(max-width: 768px){
+  .product-title {
+    display: flex;
+    font-size: 1.5rem;
+  }
+}
+
 .product-inv {
-  color: silver;
+  color: #bababa;
+}
+
+@media(max-width: 1280px){
+  .product-inv {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 768px){
+  .product-inv {
+    font-size: .75rem;
+    position: relative;
+    bottom: 15px;
+  }
+}
+
+@media(max-width: 768px){
+  .t-inv {
+    position: relative;
+    bottom: 50px;
+    right: 25px;
+  }
 }

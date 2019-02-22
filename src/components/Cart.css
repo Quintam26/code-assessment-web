@@ -5,11 +5,21 @@
 }
 
 .cart:hover {
-  color: steelblue;
+  color: #5e97d1;
   cursor: pointer;
 }
 
 .cart-content {
   display: flex;
   align-items: center;
+}
+
+i {
+  font-size: 1.25rem;
+}
+
+@media(max-width: 1280px){
+  i {
+    font-size: 1rem;
+  }
 }

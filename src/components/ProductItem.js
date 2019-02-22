@@ -4,7 +4,7 @@ import Product from './Product'
 import styles from './ProductItem.css';
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
-  <div style={{ marginBottom: 20 }} className={styles.productitem}>
+  <div className={styles.productitem}>
     <Product
       image={product.image}
       title={product.title}

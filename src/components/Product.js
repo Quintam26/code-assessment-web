@@ -9,9 +9,11 @@ const Product = ({ price, inventory, title, image }) => (
     <img src={image} alt=""/>
     </div>
     <div className="product-content">
-    <h2 className="product-price">&#36;{price}</h2>
-    <h1 className="product-title">{title}</h1> 
-    <h3 className="product-inv">{inventory ? `${inventory}` : null} REMAINING</h3>
+    <p className="product-price">&#36;{price}</p>
+    <div className="t-inv">
+    <p className="product-title">{title}</p> 
+    <p className="product-inv">{inventory ? `${inventory}` : null} REMAINING</p>
+    </div>
     </div>
   </div>
   </div>
