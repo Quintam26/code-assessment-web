@@ -15,7 +15,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
       />
     )
   ) : (
-    <i className="fas fa-shopping-cart"> <em>Your cart is empty</em></i>
+    <i className="fas fa-shopping-cart"> <em>Your cart is empty&nbsp;</em></i>
 
   )
 
@@ -26,11 +26,11 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
     <div className="cart-content">
       {/* <h3>Your Cart</h3> */}
       <div>{nodes}</div>
-      {/* <p>Total: &#36;{total}</p>
+      <p>Total: &#36;{total}&nbsp;</p>
       <button onClick={onCheckoutClicked}
         disabled={hasProducts ? '' : 'disabled'}>
         Checkout
-      </button> */}
+      </button>
     </div>
     </main>
     </div>

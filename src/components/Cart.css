@@ -1,6 +1,11 @@
 .cart {
   display: flex;
   float: right;
+
+}
+.cart:hover {
+  color: steelblue;
+  cursor: pointer;
 }
 
 .cart-content {

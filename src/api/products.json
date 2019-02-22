@@ -1,5 +1,5 @@
 [
-  {"id": 1, "title": "Chronograph", "price": 500.01, "inventory": 2},
-  {"id": 2, "title": "Quartz", "price": 10.99, "inventory": 10},
-  {"id": 3, "title": "Weekender", "price": 19.99, "inventory": 5}
+  {"id": 1, "image": "../assets/chrono.png", "title": "Chronograph", "price": 500.01, "inventory": 2},
+  {"id": 2, "image": "../assets/ipad.png", "title": "Ipad", "price": 200.99, "inventory": 5},
+  {"id": 3, "image": "../assets/tshirt.png", "title": "T-Shirt", "price": 19.99, "inventory": 20}
 ]
