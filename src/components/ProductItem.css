@@ -1,9 +1,11 @@
 .product-btn {
+    position: relative;
+    top: -100px; left: 730px;
     border: none;
     color: white;
     background-color: steelblue;
     border-radius: 1.5rem;
-    padding: .5rem 1.5rem;
+    padding: .75rem 1.75rem;
 }
 
 .product-btn:hover {
