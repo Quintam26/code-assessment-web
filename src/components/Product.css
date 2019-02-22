@@ -1,4 +1,33 @@
+:local(.product){
+  display: flex;
+  border-radius: 1rem;
+  background-color: white;
+}
+
 img {
+  display: block;
+  margin: auto;
   width: 500px;
   height: 350px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.product-img {
+  float: left;
+}
+
+.product-content {
+  vertical-align: center;
+  float: right;
+  width: 1000px;
+  padding: 5rem;
+}
+
+.product-price {
+  float: right;
+}
+
+.product-inv {
+  color: silver;
 }
