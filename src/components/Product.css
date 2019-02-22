@@ -1,16 +1,16 @@
 :local(.product){
   display: flex;
-  border-radius: 1rem;
+  border-radius: .5rem;
   background-color: white;
 }
 
 img {
   display: block;
   margin: auto;
-  width: 500px;
-  height: 350px;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  width: 650px;
+  height: 450px;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
 }
 
 .product-img {
@@ -20,7 +20,7 @@ img {
 .product-content {
   vertical-align: center;
   float: right;
-  width: 1000px;
+  width: 850px;
   padding: 5rem;
 }
 

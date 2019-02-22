@@ -2,6 +2,11 @@
     border: none;
     color: white;
     background-color: steelblue;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     padding: .5rem 1.5rem;
+}
+
+.product-btn:hover {
+    background-color: rgb(47, 98, 139);
+    cursor: pointer;
 }
