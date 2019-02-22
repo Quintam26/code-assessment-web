@@ -5,6 +5,7 @@ import Product from './Product'
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div style={{ marginBottom: 20 }}>
     <Product
+      image={product.image}
       title={product.title}
       price={product.price}
       inventory={product.inventory} />
@@ -20,6 +21,7 @@ ProductItem.propTypes = {
   product: PropTypes.shape({
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
     inventory: PropTypes.number.isRequired
   }).isRequired,
   onAddToCartClicked: PropTypes.func.isRequired
