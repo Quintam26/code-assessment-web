@@ -17,9 +17,20 @@ const addToCartUnsafe = productId => ({
   productId
 })
 
+const deleteFromCartUnsafe = productId => ({
+  type: types.DELETE_FROM_CART,
+  productId
+})
+
 export const addToCart = productId => (dispatch, getState) => {
   if (getState().products.byId[productId].inventory > 0) {
     dispatch(addToCartUnsafe(productId))
+  }
+}
+
+export const deleteFromCart = productId => (dispatch, getState) => {
+  if (getState().products.byId[productId].inventory < 0) {
+    dispatch(deleteFromCartUnsafe(productId))
   }
 }
 

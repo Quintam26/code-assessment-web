@@ -1,5 +1,6 @@
 import {
   ADD_TO_CART,
+  DELETE_FROM_CART,
   CHECKOUT_REQUEST,
   CHECKOUT_FAILURE
 } from '../constants/ActionTypes'
@@ -16,6 +17,11 @@ const addedIds = (state = initialState.addedIds, action) => {
         return state
       }
       return [ ...state, action.productId ]
+    case DELETE_FROM_CART:
+      if (state.indexOf(action.productId) === 0) {
+        return state
+      }
+      return [ ...state, action.productId ]
     default:
       return state
   }
@@ -27,6 +33,10 @@ const quantityById = (state = initialState.quantityById, action) => {
       const { productId } = action
       return { ...state,
         [productId]: (state[productId] || 0) + 1
+      }
+    case DELETE_FROM_CART:
+      return { ...state,
+        [productId]: (state[productId] || 0) - 1
       }
     default:
       return state
