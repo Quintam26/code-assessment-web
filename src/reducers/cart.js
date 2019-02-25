@@ -18,10 +18,7 @@ const addedIds = (state = initialState.addedIds, action) => {
       }
       return [ ...state, action.productId ]
     case DELETE_FROM_CART:
-      if (state.indexOf(action.productId) === 0) {
-        return state
-      }
-      return [ ...state, action.productId ]
+      return state.filter(id => id !== action.productId);
     default:
       return state
   }

@@ -29,7 +29,7 @@ export const addToCart = productId => (dispatch, getState) => {
 }
 
 export const deleteFromCart = productId => (dispatch, getState) => {
-  if (getState().products.byId[productId].inventory < 0) {
+  if (getState().products.byId[productId].inventory > 0) {
     dispatch(deleteFromCartUnsafe(productId))
   }
 }
