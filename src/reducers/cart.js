@@ -33,7 +33,7 @@ const quantityById = (state = initialState.quantityById, action) => {
       }
     case DELETE_FROM_CART:
       return { ...state,
-        [productId]: (state[productId] || 0) - 1
+        [action.productId]: state[action.productId] - 1
       }
     default:
       return state

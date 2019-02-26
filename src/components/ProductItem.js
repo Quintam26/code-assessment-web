@@ -14,9 +14,8 @@ const ProductItem = ({ product, onAddToCartClicked, onDeleteFromCartClicked }) =
       {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
     </button>
     <button
-      onClick={onDeleteFromCartClicked}
-      disabled={product.inventory > 0 ? '' : 'disabled'}>
-      {product.inventory > 0 ? 'Delete from cart' : 'No items'}
+      onClick={() => onDeleteFromCartClicked(product.id)}>
+      Delete from cart 
     </button>
   </div>
 )
