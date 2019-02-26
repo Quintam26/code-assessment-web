@@ -14,11 +14,11 @@ const Cart  = ({ products, total, onCheckoutClicked, onIncreaseQuantityClicked, 
           key={product.id}
         />
         <button
-          onClick={onIncreaseQuantityClicked}
+          onClick={() => onIncreaseQuantityClicked(product.id)}
         > +
         </button>
         <button
-          onClick={onDecreaseQuantityClicked} 
+          onClick={() => onDecreaseQuantityClicked(product.id)} 
         > - 
         </button>
       </div>

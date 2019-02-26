@@ -27,7 +27,10 @@ const addedIds = (state = initialState.addedIds, action) => {
       }
       return [ ...state, action.productId ]
     case DECREASE_QUANTITY:
-      return state.filter(id => id !== action.productId);
+    if (state.indexOf(action.productId) !== -1) {
+      return state
+    }
+    break
     default:
       return state
   }
@@ -41,9 +44,9 @@ const quantityById = (state = initialState.quantityById, action) => {
         [productId]: (state[productId] || 0) + 1
       }
     case DELETE_FROM_CART:
-      return { ...state,
-        [action.productId]: state[action.productId] - 1
-      }
+    return { ...state,
+      [action.productId]: state[action.productId] - 1
+    }
     case INCREASE_QUANTITY:
       return { ...state,
         [productId]: (state[productId] || 0) + 1
