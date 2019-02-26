@@ -13,7 +13,7 @@ const ProductsContainer = ({ products, addToCart, deleteFromCart }) => (
         key={product.id}
         product={product}
         onAddToCartClicked={() => addToCart(product.id)}
-        onDeleteFromCartClicked={() => deleteFromCart(product.id)} />
+        onDeleteFromCartClicked={() => deleteFromCart(product.id)}/>
     )}
   </ProductsList>
 )

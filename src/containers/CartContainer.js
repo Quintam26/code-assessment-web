@@ -10,7 +10,7 @@ const CartContainer = ({ products, total, checkout, increaseQuantity, decreaseQu
     products={products}
     total={total}
     onCheckoutClicked={() => checkout(products)} 
-    onIncreaseQuanityClicked={increaseQuantity}
+    onIncreaseQuantityClicked={increaseQuantity}
     onDecreaseQuantityClicked={decreaseQuantity}/>
 )
 
@@ -23,8 +23,6 @@ CartContainer.propTypes = {
   })).isRequired,
   total: PropTypes.string,
   checkout: PropTypes.func.isRequired,
-  increaseQuantity: PropTypes.func.isRequired,
-  decreaseQuantity: PropTypes.func.isRequired
 }
 
 const mapStateToProps = (state) => ({

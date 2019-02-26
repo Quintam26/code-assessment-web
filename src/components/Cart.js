@@ -13,14 +13,16 @@ const Cart  = ({ products, total, onCheckoutClicked, onIncreaseQuantityClicked, 
           quantity={product.quantity}
           key={product.id}
         />
-        <button
-          onClick={() => onIncreaseQuantityClicked(product.id)}
-        > +
-        </button>
-        <button
-          onClick={() => onDecreaseQuantityClicked(product.id)} 
-        > - 
-        </button>
+        <div>
+          <button
+            onClick={() => onIncreaseQuantityClicked(product.id)}
+          > +
+          </button>
+          <button
+            onClick={() => onDecreaseQuantityClicked(product.id)} 
+          > - 
+          </button>
+        </div>
       </div>
     )
   ) : (
@@ -44,8 +46,6 @@ Cart.propTypes = {
   products: PropTypes.array,
   total: PropTypes.string,
   onCheckoutClicked: PropTypes.func,
-  onIncreaseQuantityClicked: PropTypes.func,
-  onDecreaseQuantityClicked: PropTypes.func
 }
 
 export default Cart

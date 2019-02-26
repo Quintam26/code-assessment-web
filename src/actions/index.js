@@ -32,7 +32,6 @@ const decreaseCartUnsafe = productId => ({
   productId
 })
 
-
 export const addToCart = productId => (dispatch, getState) => {
   if (getState().products.byId[productId].inventory > 0) {
     dispatch(addToCartUnsafe(productId))
@@ -46,15 +45,11 @@ export const deleteFromCart = productId => (dispatch, getState) => {
 }
 
 export const increaseQuantity = productId => (dispatch, getState) => {
-  if (getState().products.byId[productId].inventory > 0) {
-    dispatch(increaseCartUnsafe(productId))
-  }
+  getState(dispatch(increaseCartUnsafe(productId)))
 }
 
 export const decreaseQuantity = productId => (dispatch, getState) => {
-  if (getState().products.byId[productId].inventory > 0) {
-    dispatch(decreaseCartUnsafe(productId))
-  }
+  getState(dispatch(decreaseCartUnsafe(productId)))
 }
 
 export const checkout = products => (dispatch, getState) => {
