@@ -11,8 +11,8 @@ const products = (state, action) => {
     case DELETE_FROM_CART:
     return {
       ...state,
-      inventory: state.inventory 
-    }
+      inventory: state.inventory + 1
+    };
     case INCREASE_QUANTITY:
       return {
         ...state,
