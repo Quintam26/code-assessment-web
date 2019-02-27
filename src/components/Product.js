@@ -5,8 +5,8 @@ import styles from './Product.css'
 const Product = ({ price, quantity, title, image }) => (
   <div className={styles.product}>
     <div>
-      <img clasName="image" src={image} alt=""/>
-      <p className="info">{title}<br/>{quantity ? ` Remaining ${quantity}` : null}</p>
+      <img src={image} alt="" className="Image"/>
+      <p className="info">{title}<br/>{quantity ? ` Remaining ${quantity}` : `Remaining 0`}</p>
       <p className="price">&#36;{price}</p>
     </div>
   </div>

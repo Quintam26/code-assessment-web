@@ -1,5 +1,5 @@
 [
-  {"id": 1, "image": "https://images.unsplash.com/photo-1507975456351-a41d6828b9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", "title": "Watch", "price": 500.01, "inventory": 2},
-  {"id": 2, "image": "https://images.unsplash.com/photo-1546624218-0b25553d8a49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80", "title": "Ipad", "price": 200.99, "inventory": 5},
-  {"id": 3, "image": "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80", "title": "T-Shirt", "price": 19.99, "inventory": 20}
+  {"id": 1, "image": "http://static2.worldtempus.com/cache/product/c/h/chopard-superfast-chrono-porsche-919-edition-watch-face-view_688x688.jpg", "title": "Watch", "price": 500.01, "inventory": 2},
+  {"id": 2, "image": "https://mockuphone.com/static/images/devices/apple-ipad-black-landscape.png", "title": "Ipad", "price": 200.99, "inventory": 5},
+  {"id": 3, "image": "http://www.allwhitebackground.com/images/1/Printed-T-Shirts-8.jpg", "title": "T-Shirt", "price": 19.99, "inventory": 20}
 ]

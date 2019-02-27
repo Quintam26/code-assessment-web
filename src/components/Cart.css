@@ -1,15 +1,56 @@
 :local(.cart){
   display: flex;
   float: left;
-  margin: 1rem;
+  margin: -3rem 0rem;
   width: 25%;
   justify-content: center;
 }
 
-.nodes {
-  font-size: .7rem;
+.logo {
+  font-size: 3.5rem;
+  justify-items: start;
 }
 
-#i{
+#i {
   font-size: 1rem;
+  color: rgb(146, 146, 146);
+}
+
+.del {
+  position: relative;
+  right: 3.8rem;
+  border: none;
+  color: white;
+  background-color: #3eab93;
+  border-radius: .20rem;
+  padding: .5rem 1rem;
+  margin: 1rem;
+}
+
+.delBtn { 
+}
+
+.dec {
+  border: none;
+  color: white;
+  background-color: #3eab93;
+  border-radius: .20rem;
+  padding: .5rem 1rem;
+  margin: 1rem;
+  float: right;
+}
+
+.inc {
+  border: none;
+  color: white;
+  background-color: #3eab93;
+  border-radius: .20rem;
+  padding: .5rem 1rem;
+  margin: 1rem;
+  float: right;
+}
+
+.PR {
+  border: silver solid 1px;
+  padding: 1rem;
 }

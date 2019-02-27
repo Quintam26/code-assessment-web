@@ -8,24 +8,24 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
   const nodes = hasProducts ? (
     products.map(product =>
       <div>
-        <Product
+        <Product className="PR"
           title={product.title}
           price={product.price}
           quantity={product.quantity}
           key={product.id}
           image={product.image}
         />
-        <button
-          onClick={() => onDeleteFromCartClicked(product.id)}>
-          Remove
-        </button>
         <div>
-          <button
+            <button className="del"
+              onClick={() => onDeleteFromCartClicked(product.id)}>
+              Remove
+            </button>
+          <button className="inc"
             onClick={() => onIncreaseQuantityClicked(product.id)}
             disabled={product.inventory > 0 ? '' : 'disabled'}
           ><i className="fas fa-plus"></i>
           </button>
-          <button
+          <button className="dec"
             onClick={() => onDecreaseQuantityClicked(product.id)}
             disabled={product.quantity > 0 ? '' : 'disabled'}
           ><i className="fas fa-minus"></i>
@@ -34,24 +34,24 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
       </div>
     )
   ) : (
-    <i className="fas fa-shopping-cart" id="i"> <em>Your cart is empty&nbsp;</em></i>
+    <i className="fas fa-shopping-cart" id="i"> <p>Your cart is ppty&nbsp;</p></i>
 
   )
 
   return (
     <div className={styles.cart}>
-    <div className="cart">
-    <main className="cart-content">
-      <h3>Your Cart</h3>
-      <div className="nodes">{nodes}</div>
-      {image}  
-      <p>Total: &#36;{total}&nbsp;</p>
-      <button onClick={onCheckoutClicked}
-        disabled={hasProducts ? '' : 'disabled'}>
-        Checkout
-      </button>
-    </main>
-    </div>
+      <div className="cart">
+        <main className="cart-content">
+          <p className="logo">Shopping<br/>Cart</p>
+            <div className="nodes">{nodes}</div>
+              {image}
+              {/* <p>Total: &#36;{total}&nbsp;</p>
+              <button onClick={onCheckoutClicked}
+                disabled={hasProducts ? '' : 'disabled'}>
+                Checkout
+              </button> */}
+        </main>
+      </div>
     </div>
   )
 }

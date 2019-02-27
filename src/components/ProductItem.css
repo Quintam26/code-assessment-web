@@ -3,6 +3,24 @@ display: flex;
 align-items: center;
 }
 
+
+.btn{
+  position: relative;
+  bottom: 5rem;
+  right: 6.5rem;
+}
+
+.add {
+  border: none;
+  color: white;
+  background-color: #3eab93;
+  border-radius: .20rem;
+  padding: .5rem 1rem;
+  margin: 1rem;
+}
+
+
+
 hr {
   margin-bottom: 2rem;
 }

@@ -1,16 +1,15 @@
 :local(.product){
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
 }
 
 img {
-  width: 35%;
+  width: 30%;
   float: left;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+}
+
+.Image {
+  border: silver 1px solid;
 }
 
 .info {
@@ -22,3 +21,5 @@ img {
   float: right;
   margin: 2rem;
 }
+
+

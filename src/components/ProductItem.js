@@ -5,20 +5,22 @@ import styles from './ProductItem.css'
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div className={styles.productitem}>
-  <div>
-  <hr/>
-    <Product
-      image={product.image}
-      title={product.title}
-      price={product.price}
-      quantity={product.inventory} 
-    />
-    <button className="add"
-      onClick={onAddToCartClicked}
-      disabled={product.inventory > 0 ? '' : 'disabled'}>
-      {product.inventory > 0 ? 'Add to cart' : 'Sold out'}
-    </button>
-    <br/>
+    <div>
+      <Product
+        image={product.image}
+        title={product.title}
+        price={product.price}
+        quantity={product.inventory} 
+      />
+      <div className="btn">
+        <button className="add"
+          onClick={onAddToCartClicked}
+          disabled={product.inventory > 0 ? '' : 'disabled'}>
+          {product.inventory > 0 ? 'ADD TO CART' : 'SOLD OUT'}
+        </button>
+      </div>
+        <br/>
+        <hr/>
     </div>
   </div>
 )
