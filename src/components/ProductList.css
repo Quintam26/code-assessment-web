@@ -1,7 +1,15 @@
-:local(.productlist){
+:local(.productlist){ 
   display: flex;
   float: right;  
   width: 65%;
   margin: 1rem;
   justify-content: center;
+}
+
+@media only screen and (max-width: 320px) {
+  :local(.productlist){ 
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
 }

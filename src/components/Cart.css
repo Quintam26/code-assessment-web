@@ -6,9 +6,22 @@
   justify-content: center;
 }
 
+@media only screen and (max-width: 320px) {
+  :local(.cart){
+    display: block;
+    margin: 0;
+    width: 100%;
+}}
+
 .logo {
   font-size: 3.5rem;
   justify-items: start;
+}
+
+@media only screen and (max-width: 320px) {
+  .logo {
+    font-size: 2rem;
+  }
 }
 
 #i {

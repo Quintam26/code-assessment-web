@@ -35,6 +35,7 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
       </div>
     )
   ) : (
+    
     <p><i className="fas fa-shopping-cart" id="i"> Your cart is empty&nbsp;</i></p>
 
   )

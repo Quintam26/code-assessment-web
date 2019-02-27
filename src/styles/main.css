@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
 button:hover {
   cursor: pointer;
 }
@@ -15,6 +17,11 @@ body {
   display: flex;
   text-align: center;
   margin: 3rem;
+  font-family: 'Lora', serif;
+}
+
+@media only screen and (max-width: 320px) {
+
 }
 
 .acme {

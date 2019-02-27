@@ -4,9 +4,23 @@
   padding-top: 4rem; 
 }
 
+@media only screen and (max-width: 320px) {
+  :local(.product) {
+    padding-top: 1.5rem;
+  }
+}
+
 img {
   width: 30%;
   float: left;
+}
+
+@media only screen and (max-width: 320px) {
+  img {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
 }
 
 .Image {
@@ -18,9 +32,23 @@ img {
   margin: 2rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .info {
+    float: none;
+    margin: 0;
+  }
+}
+
 .price{
   float: right;
   margin: 2rem;
+}
+
+@media only screen and (max-width: 320px) {
+  .price {
+    float: none;
+    margin: 0;
+  }
 }
 
 

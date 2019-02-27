@@ -4,8 +4,8 @@ import CartContainer from './CartContainer'
 
 const App = () => (
   <div>
-    <ProductsContainer />
     <CartContainer />
+    <ProductsContainer />
   </div>
 )
 
