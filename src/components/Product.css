@@ -4,6 +4,12 @@
   padding-top: 4rem; 
 }
 
+@media only screen and (max-width: 768px) {
+  :local(.product) {
+    padding-top: 3rem;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   :local(.product) {
     padding-top: 1.5rem;
@@ -13,6 +19,12 @@
 img {
   width: 30%;
   float: left;
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -32,6 +44,12 @@ img {
   margin: 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .info {
+    margin: 1rem;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .info {
     float: none;
@@ -42,6 +60,12 @@ img {
 .price{
   float: right;
   margin: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .price {
+    margin: 1rem;
+  }
 }
 
 @media only screen and (max-width: 320px) {

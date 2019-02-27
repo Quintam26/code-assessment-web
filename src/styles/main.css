@@ -20,10 +20,6 @@ body {
   font-family: 'Lora', serif;
 }
 
-@media only screen and (max-width: 320px) {
-
-}
-
 .acme {
   display: flex;
   width: 25%;

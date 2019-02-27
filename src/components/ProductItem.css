@@ -3,38 +3,12 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 320px) {
-  :local(.productitem){
-  }
-}
 
-.btn {
-  position: relative;
-  bottom: 5rem;
-  right: 6rem;
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .btn {
-
-  }
-}
-
-@media only screen and(max-width: 1024px) {
-  .btn {
-    
-  }
-}
-
-@media only screen and(max-width: 768px) {
-  .btn {
-  
-  }
-}
-
-@media only screen and(max-width: 640px) {
-  .btn {
-    
+    position: relative;
+    bottom: 3rem;
+    left: 2rem;
   }
 }
 
@@ -56,9 +30,13 @@
 }
 
 .add:hover {
-  background-color: #27987f ;
+  background-color: #27987f;
 }
 
+.add:disabled {
+  background-color: #dfdfdf;
+  cursor: pointer;
+}
 
 hr {
   border-top: silver solid 1px;

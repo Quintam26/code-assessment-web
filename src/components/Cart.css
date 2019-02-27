@@ -18,6 +18,12 @@
   justify-items: start;
 }
 
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .logo {
     font-size: 2rem;
