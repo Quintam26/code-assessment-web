@@ -4,6 +4,22 @@
 }
 
 
+@media only screen and (min-width: 1281px) {
+  .btn {
+    position: relative;
+    bottom: 3rem;
+    right: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .btn {
+    position: relative;
+    bottom: 3rem;
+    right: 4.5rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .btn {
     position: relative;
