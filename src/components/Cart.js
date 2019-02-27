@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
+import styles from './Cart.css'
 
 const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityClicked, onDecreaseQuantityClicked, onDeleteFromCartClicked }) => {
   const hasProducts = products.length > 0
@@ -39,7 +40,7 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
   )
 
   return (
-    <div>
+    <div className={styles.cart}>
     <div className="cart">
     <main className="cart-content">
       <h3>Your Cart</h3>

@@ -1,40 +1,8 @@
-.product-btn {
-    position: relative;
-    top: -100px; left: 730px;
-    border: none;
-    color: white;
-    background-color: #5e97d1;
-    border-radius: 1.5rem;
-    padding: .75rem 1.5rem;
+:local(.productitem){
+  border: red solid 3px;
+  margin: auto;
 }
 
-@media(max-width: 1280px){
-  .product-btn {
-      position: relative;
-      top: -80px;
-      left: 500px;
-  }  
+.add {
+  margin: auto
 }
-
-@media(max-width: 786px){
-  .product-btn {
-      position: relative;
-      top: -55px;
-      left: 275px;
-      font-size: 10px;
-  }  
-}
-
-@media(max-width: 320px){
-  .product-btn {
-    padding: .5rem 1rem;
-    top: -35px;
-    left: 15px;
-  }
-}
-
-.product-btn:hover {
-    background-color: #407fc0;
-    cursor: pointer;
-}
-

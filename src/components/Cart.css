@@ -1,37 +1,6 @@
-.cart {
+:local(.cart){
   display: flex;
-  float: right;
-  padding: 2.5rem 0rem;
-}
-
-@media(max-width: 320px){
-  .cart {
-    float: none;
-    justify-content: center;
-  }
-}
-.cart:hover {
-  color: #5e97d1;
-  cursor: pointer;
-}
-
-.cart-content {
-  display: flex;
-  align-items: center;
-}
-
-i {
-  font-size: 1.25rem;
-}
-
-@media(max-width: 1280px){
-  i {
-    font-size: 1rem;
-  }
-}
-
-@media(max-width: 320px){
-  i {
-    font-size: .75rem;
-  }
+  float: left;
+  width: 25%;
+  justify-content: center;
 }

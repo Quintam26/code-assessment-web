@@ -1,0 +1,7 @@
+:local(.productlist){
+  display: flex;
+  float: right;  
+  width: 75%;
+  justify-content: center;
+  border: blue solid 1px;
+}

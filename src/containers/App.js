@@ -7,7 +7,6 @@ const App = () => (
     <h2 className="store-logo">Acme Store</h2>
     <hr/>
     <ProductsContainer />
-    <hr/>
     <CartContainer />
   </div>
 )
