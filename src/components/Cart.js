@@ -35,7 +35,7 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
       </div>
     )
   ) : (
-    <i className="fas fa-shopping-cart"> <em>Your cart is empty&nbsp;</em></i>
+    <i className="fas fa-shopping-cart" id="i"> <em>Your cart is empty&nbsp;</em></i>
 
   )
 
@@ -44,7 +44,7 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
     <div className="cart">
     <main className="cart-content">
       <h3>Your Cart</h3>
-      <div>{nodes}</div>
+      <div className="nodes">{nodes}</div>
       {image}  
       <p>Total: &#36;{total}&nbsp;</p>
       <button onClick={onCheckoutClicked}

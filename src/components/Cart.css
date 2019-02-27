@@ -4,3 +4,11 @@
   width: 25%;
   justify-content: center;
 }
+
+.nodes {
+  font-size: .7rem;
+}
+
+#i{
+  font-size: 1rem;
+}

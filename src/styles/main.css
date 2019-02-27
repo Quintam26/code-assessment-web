@@ -4,7 +4,7 @@ button {
   background-color: #5e97d1;
   border-radius: 1rem;
   padding: .5rem 1rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 button:hover {
@@ -22,4 +22,5 @@ button:disabled {
 
 body {
   text-align: center;
+  background-color: #f5f5f5;
 }

@@ -1,11 +1,24 @@
 :local(.product){
   display: flex;
   flex-direction: column;
-  border: orange solid 3px;
+  background-color: white;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 img {
-  width: 33%;
+  width: 35%;
   float: left;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
+.info {
+  float: left;
+  margin: 2rem;
+}
+
+.price{
+  float: right;
+  margin: 2rem;
+}
