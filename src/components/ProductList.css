@@ -1,7 +1,7 @@
 :local(.productlist){
   display: flex;
   float: right;  
-  width: 70%;
+  width: 65%;
   margin: 1rem;
   justify-content: center;
 }

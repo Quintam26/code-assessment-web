@@ -6,12 +6,13 @@ import styles from './ProductItem.css'
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div className={styles.productitem}>
     <div>
+      <hr className="hr"/>
       <Product
         image={product.image}
         title={product.title}
         price={product.price}
         quantity={product.inventory} 
-      />
+        />
       <div className="btn">
         <button className="add"
           onClick={onAddToCartClicked}
@@ -19,8 +20,6 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
           {product.inventory > 0 ? 'ADD TO CART' : 'SOLD OUT'}
         </button>
       </div>
-        <br/>
-        <hr/>
     </div>
   </div>
 )

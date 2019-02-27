@@ -7,8 +7,8 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
   const hasProducts = products.length > 0
   const nodes = hasProducts ? (
     products.map(product =>
-      <div>
-        <Product className="PR"
+      <div className="cont">
+        <Product
           title={product.title}
           price={product.price}
           key={product.id}
@@ -31,6 +31,7 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
             REMOVE
         </button>
         </div>
+        {/* <hr className="hr"/> */}
       </div>
     )
   ) : (
