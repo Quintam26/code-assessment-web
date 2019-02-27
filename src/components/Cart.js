@@ -28,7 +28,6 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
           <button
             onClick={() => onDecreaseQuantityClicked(product.id)}
             disabled={product.quantity > 0 ? '' : 'disabled'}
- 
           ><i className="fas fa-minus"></i>
           </button>
         </div>

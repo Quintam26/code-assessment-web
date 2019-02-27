@@ -2,5 +2,6 @@
   display: flex;
   float: right;  
   width: 70%;
+  margin: 1rem;
   justify-content: center;
 }

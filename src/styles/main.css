@@ -21,6 +21,14 @@ button:disabled {
 }
 
 body {
+  display: flex;
   text-align: center;
   background-color: #f5f5f5;
+}
+
+.acme {
+  display: flex;
+  width: 25%;
+  margin: 1rem;
+  justify-content: center;
 }

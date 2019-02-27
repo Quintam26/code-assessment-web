@@ -1,6 +1,9 @@
 :local(.productitem){
+display: flex;
+align-items: center;
 }
 
-.add {
-  margin: auto
+hr {
+  margin-bottom: 2rem;
 }
+

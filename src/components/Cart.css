@@ -1,6 +1,7 @@
 :local(.cart){
   display: flex;
   float: left;
+  margin: 1rem;
   width: 25%;
   justify-content: center;
 }
