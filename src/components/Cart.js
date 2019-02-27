@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
-import styles from './Cart.css';
 
-const Cart  = ({ products, total, onCheckoutClicked, onIncreaseQuantityClicked, onDecreaseQuantityClicked }) => {
+const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityClicked, onDecreaseQuantityClicked, onDeleteFromCartClicked }) => {
   const hasProducts = products.length > 0
   const nodes = hasProducts ? (
     products.map(product =>
@@ -13,15 +12,20 @@ const Cart  = ({ products, total, onCheckoutClicked, onIncreaseQuantityClicked, 
           price={product.price}
           quantity={product.quantity}
           key={product.id}
+          image={product.image}
         />
         <div>
           <button
             onClick={() => onIncreaseQuantityClicked(product.id)}
-          > +
+          ><i className="fas fa-plus"></i>
           </button>
           <button
             onClick={() => onDecreaseQuantityClicked(product.id)} 
-          > - 
+          ><i className="fas fa-minus"></i>
+          </button>
+          <button
+            onClick={() => onDeleteFromCartClicked(product.id)}>
+            Delete from cart
           </button>
         </div>
       </div>
@@ -32,11 +36,12 @@ const Cart  = ({ products, total, onCheckoutClicked, onIncreaseQuantityClicked, 
   )
 
   return (
-    <div className={styles.cart}>
+    <div>
     <div className="cart">
     <main className="cart-content">
       <h3>Your Cart</h3>
       <div>{nodes}</div>
+      {image}  
       <p>Total: &#36;{total}&nbsp;</p>
       <button onClick={onCheckoutClicked}
         disabled={hasProducts ? '' : 'disabled'}>

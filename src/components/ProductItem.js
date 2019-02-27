@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
-import styles from './ProductItem.css';
 
-const ProductItem = ({ product, onAddToCartClicked, onDeleteFromCartClicked }) => (
-  <div className={styles.productitem}>
+const ProductItem = ({ product, onAddToCartClicked }) => (
+  <div>
     <Product
       image={product.image}
       title={product.title}
@@ -13,11 +12,7 @@ const ProductItem = ({ product, onAddToCartClicked, onDeleteFromCartClicked }) =
     <button className="product-btn"
       onClick={onAddToCartClicked}
       disabled={product.inventory > 0 ? '' : 'disabled'}>
-      {product.inventory > 0 ? 'ADD TO CART' : 'SOLD OUT'}
-    </button>
-    <button
-      onClick={() => onDeleteFromCartClicked(product.id)}>
-      Delete from cart 
+      {product.inventory > 0 ? 'Add to cart' : 'Sold out'}
     </button>
   </div>
 )
@@ -30,7 +25,6 @@ ProductItem.propTypes = {
     inventory: PropTypes.number.isRequired
   }).isRequired,
   onAddToCartClicked: PropTypes.func.isRequired,
-  onDeleteFromCartClicked: PropTypes.func.isRequired
 }
 
 export default ProductItem
