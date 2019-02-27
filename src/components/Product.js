@@ -6,7 +6,7 @@ const Product = ({ price, quantity, title, image }) => (
   <div className={styles.product}>
     <div>
       <img src={image} alt="" className="Image"/>
-      <p className="info">{title}<br/>{quantity ? ` Remaining ${quantity}` : `Remaining 0`}</p>
+      <p className="info">{title}<br/>{quantity ? ` Remaining ${quantity}` : null}</p>
       <p className="price">&#36;{price}</p>
     </div>
   </div>

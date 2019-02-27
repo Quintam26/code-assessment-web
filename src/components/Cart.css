@@ -17,40 +17,53 @@
 }
 
 .del {
-  position: relative;
-  right: 3.8rem;
+  color: rgb(150, 150, 150);
   border: none;
-  color: white;
-  background-color: #3eab93;
-  border-radius: .20rem;
-  padding: .5rem 1rem;
+  background-color: white;
   margin: 1rem;
-}
-
-.delBtn { 
 }
 
 .dec {
   border: none;
   color: white;
-  background-color: #3eab93;
+  background-color: silver;
   border-radius: .20rem;
   padding: .5rem 1rem;
   margin: 1rem;
-  float: right;
+}
+
+.dec:hover {
+  background-color: rgb(150, 150, 150);
 }
 
 .inc {
   border: none;
+  background-color: silver;
   color: white;
-  background-color: #3eab93;
   border-radius: .20rem;
   padding: .5rem 1rem;
   margin: 1rem;
-  float: right;
+}
+
+.inc:hover {
+  background-color: rgb(150, 150, 150);
 }
 
 .PR {
   border: silver solid 1px;
   padding: 1rem;
 }
+
+.check {
+  border: none;
+  color: white;
+  background-color: #3eab93;
+  border-radius: .20rem;
+  padding: .5rem 1rem;
+  margin: 1rem;
+}
+
+.check:hover {
+  background-color: #27987f ;
+}
+

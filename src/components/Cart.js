@@ -11,30 +11,30 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
         <Product className="PR"
           title={product.title}
           price={product.price}
-          quantity={product.quantity}
           key={product.id}
           image={product.image}
         />
         <div>
-            <button className="del"
-              onClick={() => onDeleteFromCartClicked(product.id)}>
-              Remove
-            </button>
           <button className="inc"
             onClick={() => onIncreaseQuantityClicked(product.id)}
             disabled={product.inventory > 0 ? '' : 'disabled'}
           ><i className="fas fa-plus"></i>
           </button>
+          {product.quantity}
           <button className="dec"
             onClick={() => onDecreaseQuantityClicked(product.id)}
             disabled={product.quantity > 0 ? '' : 'disabled'}
           ><i className="fas fa-minus"></i>
           </button>
+          <button className="del"
+            onClick={() => onDeleteFromCartClicked(product.id)}>
+            REMOVE
+        </button>
         </div>
       </div>
     )
   ) : (
-    <i className="fas fa-shopping-cart" id="i"> <p>Your cart is ppty&nbsp;</p></i>
+    <p><i className="fas fa-shopping-cart" id="i"> Your cart is empty&nbsp;</i></p>
 
   )
 

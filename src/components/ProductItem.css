@@ -19,6 +19,9 @@ align-items: center;
   margin: 1rem;
 }
 
+.add:hover {
+  background-color: #27987f ;
+}
 
 
 hr {
