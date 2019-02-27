@@ -14,18 +14,21 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
           key={product.id}
           image={product.image}
         />
+        <button
+          onClick={() => onDeleteFromCartClicked(product.id)}>
+          Remove
+        </button>
         <div>
           <button
             onClick={() => onIncreaseQuantityClicked(product.id)}
+            disabled={product.inventory > 0 ? '' : 'disabled'}
           ><i className="fas fa-plus"></i>
           </button>
           <button
-            onClick={() => onDecreaseQuantityClicked(product.id)} 
+            onClick={() => onDecreaseQuantityClicked(product.id)}
+            disabled={product.quantity > 0 ? '' : 'disabled'}
+ 
           ><i className="fas fa-minus"></i>
-          </button>
-          <button
-            onClick={() => onDeleteFromCartClicked(product.id)}>
-            Delete from cart
           </button>
         </div>
       </div>
