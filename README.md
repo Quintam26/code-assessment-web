@@ -18,13 +18,13 @@ After completing the cart functionality I returned to complete the responsive de
 
 Three breakpoints were assigned in order to use for the responsive design. I completed those three but I added a couple more in between in order to create a smoother change when scrolling screen sizes. With more time I would have wanted to have the cart render on a different page and when a user added an item only the 'Your cart is empty' text would change to the total amount. By clicking the cart element a user would then see the items and add, decrease, and remove as well. In this way, I could have styled the cart more closely to the prototype.
 
-1280px ![1280](https://user-images.githubusercontent.com/32649354/53599781-db130e80-3b5c-11e9-899d-e99eab064b55.png)
+<h3>1280px/<h3> ![1280](https://user-images.githubusercontent.com/32649354/53599781-db130e80-3b5c-11e9-899d-e99eab064b55.png)
 
-768px
+<h3>768px</h3>
 
 ![768](https://user-images.githubusercontent.com/32649354/53599837-00a01800-3b5d-11e9-8c91-0ba74a950155.png)
 
-360px 
+<h3>360px</h3> 
 
 ![320](https://user-images.githubusercontent.com/32649354/53599881-157cab80-3b5d-11e9-86f2-93591a47f958.png)
 
