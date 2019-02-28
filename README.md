@@ -20,9 +20,13 @@ Three breakpoints were assigned in order to use for the responsive design. I com
 
 1280px ![1280](https://user-images.githubusercontent.com/32649354/53599781-db130e80-3b5c-11e9-899d-e99eab064b55.png)
 
-768px![768](https://user-images.githubusercontent.com/32649354/53599837-00a01800-3b5d-11e9-8c91-0ba74a950155.png)
+768px
 
-360px ![320](https://user-images.githubusercontent.com/32649354/53599881-157cab80-3b5d-11e9-86f2-93591a47f958.png)
+![768](https://user-images.githubusercontent.com/32649354/53599837-00a01800-3b5d-11e9-8c91-0ba74a950155.png)
+
+360px 
+
+![320](https://user-images.githubusercontent.com/32649354/53599881-157cab80-3b5d-11e9-86f2-93591a47f958.png)
 
 2. [Enhance Cart Functionality](/tasks/02-cart-enhancements.md)
 
