@@ -32,7 +32,9 @@ Three breakpoints were assigned in order to use for the responsive design. I com
 
 2. [Enhance Cart Functionality](/tasks/02-cart-enhancements.md)
 
+I referenced the action and reducer code to "Add to cart' in order to create the 'Delete from cart' feature. To see if an action was called and the state changed I implemented the Redux Dev Tool in order to monitor the state. Just as 'Add to cart' retrieved the state in order to add an item, so did the 'Delete from cart' retrieved the state and deleted an item based on its id. Originally I placed the 'Delete' in the products container however, I soon realized it was meant to be in the cart and moved it soon after. 
 
+Creating the 'Increase quantity' and 'Decrease quantity' features would essentially be 'Add' and 'Delete' but only effecting the quantity. I had issues with the 'Increase and 'Decrease' actions not running as it was evident in the redux dev tool. Correcting typos fixed this and by trying the code and checking the redux tool I was able to confirm that each increased and decreased item referred to the same id and pin. I also added logic to the buttons so that when increasing is allowed when there is the inventory available else the button is disabled. The same logic for the decrease is applied except when there is available quantity in the cart. With more time I would have explored working on the 'Checkout' feature, having the cart disabled, and showing an empty cart in a separate webpage.
 
 3. [Hook Up Product API](/tasks/03-product-api.md)
 
