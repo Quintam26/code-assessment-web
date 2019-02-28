@@ -6,6 +6,14 @@
   justify-content: center;
 }
 
+@media only screen and (max-width: 544px) {
+  :local(.productlist){ 
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   :local(.productlist){ 
     display: block;

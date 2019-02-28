@@ -3,12 +3,19 @@
   align-items: center;
 }
 
-
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1401px) {
   .btn {
     position: relative;
     bottom: 3rem;
-    right: 4.5rem;
+    right: 6rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .btn {
+    position: relative;
+    bottom: 3rem;
+    right: 5.5rem;
   }
 }
 
@@ -20,7 +27,31 @@
   }
 }
 
+@media only screen and (max-width: 1180px) {
+  .btn {
+    position: relative;
+    bottom: 3rem;
+    right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .btn {
+    position: relative;
+    bottom: 3rem;
+    right: 2.5rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .btn {
+    position: relative;
+    bottom: 3rem;
+    left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 544px) {
   .btn {
     position: relative;
     bottom: 3rem;
@@ -32,7 +63,7 @@
   .btn {
     position: relative;
     bottom: 0;
-    right: 0;
+    left: 0rem;
   }
 }
 

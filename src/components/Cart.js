@@ -14,7 +14,7 @@ const Cart  = ({ products, total, image, onCheckoutClicked, onIncreaseQuantityCl
           key={product.id}
           image={product.image}
         />
-        <div>
+        <div className="power">
           <button className="inc"
             onClick={() => onIncreaseQuantityClicked(product.id)}
             disabled={product.inventory > 0 ? '' : 'disabled'}
