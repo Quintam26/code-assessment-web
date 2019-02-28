@@ -20,13 +20,8 @@ After completing the cart functionality I returned to complete the responsive de
 
 Three breakpoints were assigned in order to use for the responsive design. I completed those three but I added a couple more in between in order to create a smoother change when scrolling screen sizes. With more time I would have wanted to have the cart render on a different page and when a user added an item only the 'Your cart is empty' text would change to the total amount. By clicking the cart element a user would then see the items and add, decrease, and remove as well. In this way, I could have styled the cart more closely to the prototype.
 
-
-
-
-
-
-
 2. [Enhance Cart Functionality](/tasks/02-cart-enhancements.md)
+
 3. [Hook Up Product API](/tasks/03-product-api.md)
 
 
