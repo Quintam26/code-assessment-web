@@ -9,12 +9,14 @@
 const URL = 'http://tech.work.co/shopping-cart/products.json'
 
 const fetchData = () => {
-  fetch(URL)
+  return fetch(URL)
     .then(response => response.json())
-    .then(items => {
-      items.map(product => 
-      console.log(product))
-    })  
+    .then(response => {
+      response.map(product => {
+      const item = { id: product.id, productTitle: product.productTitle, inventory: product.inventory, value: product.price.value };
+      console.log(item)
+    })
+  })
 }
 
 export default {
