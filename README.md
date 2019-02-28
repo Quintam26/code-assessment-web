@@ -10,8 +10,6 @@ npm start
 
 ## Tasks
 
-Please publish your work to a fork of this repo. You're welcome (but not required) to add any libraries you think would be helpful.
-
 1. [Implement Responsive Design](/tasks/01-responsive-design.md)
 
 Originally I opted to follow the prototype v.2  design and I made good progress. However, as I started working on the responsive design the CSS was not smooth and my biggest problem was moving the 'Add to cart' button into the product item. Using position relative was not ideal but it worked. Another issue was moving the cart to upper right corner. I did manage this by moving the CartContainer component above the Title component. Looking back I simply could have placed both in a container and used display flex, and float to their respective sides. In any case, after finishing this first draft I moved on to the cart logic.
